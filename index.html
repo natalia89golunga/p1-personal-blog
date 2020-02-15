@@ -6,14 +6,38 @@
     color: white;
     font-size: 40px;
   }
-  .nav {
+  ul.nav {
     color:rebeccapurple;
     height: 70px;
     font-size: 26px;
-    background-image: url('em.jpg');
     opacity: 0.5;
     padding: 40px;
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E2DBFF;
   }
+  .nav li {
+    float: right;
+  }
+
+  .nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .nav li a:hover:not(.active) {
+    background-color: #C5A0FF;
+  }
+
+  .nav .active {
+    background-color: pink;
+  }
+
 
   .social {
     position: fixed;
@@ -245,7 +269,13 @@
     </ul>
   </div>
 
-  <div class="nav"></div>
+    <ul class="nav">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
   <div class="container">
     <div class="header"></div>
     <div id="bar">
