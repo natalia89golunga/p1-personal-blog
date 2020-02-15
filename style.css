@@ -3,6 +3,7 @@ body {
   color: white;
   font-size: 40px;
 }
+
 ul.nav {
   color:rebeccapurple;
   height: 70px;
@@ -46,13 +47,6 @@ background-color: #E2DBFF;
   color: #fbf0ff;
 }
 
-#nestedGrid {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  border: solid green;
-}
-
 .container {
   display: grid;
   width: 80vw;
@@ -67,7 +61,7 @@ background-color: #E2DBFF;
   /*grid-template-columns: repeat(6, 1fr);*/
   grid-auto-rows: minmax(50px, auto);
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 45px;
+  grid-gap: 45px;/* TODO for blog grid-gap: 8px;*/
   grid-template-areas:
   "hd hd hd"
   "br br br"
@@ -83,11 +77,15 @@ background-color: #E2DBFF;
   grid-area: hd;
   height: 500px;
   background-image: url('pie.jpg');
-  background-size: contain;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   font-size: 72px;
   color: white;
+}
+
+.body-blog .header {
+  background-image: url('baby-cow.jpg');
 }
 
 #bar {
@@ -142,7 +140,6 @@ background-color: #E2DBFF;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  /*margin: 14px 12px;*/
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 16px;
@@ -169,7 +166,6 @@ background-color: #E2DBFF;
   padding: 16px;
   color:  #C798FF;
   font-family: "Times New Roman", Times, serif;
-  font-style: italic;
 }
 
 .text:hover {
@@ -180,6 +176,7 @@ background-color: #E2DBFF;
 .profile-emily {
   border-radius: 50%;
 }
+
 #profile-image {
   align-items: flex-start;
   grid-area: sd;
@@ -250,6 +247,149 @@ background-color: #E2DBFF;
 }
 
 footer {
-  color: #C798FF;
+  /* color: #C798FF; */
   font-size: 24px;
 }
+
+/* BLOG PAGE!*/
+
+body.body-blog {
+  color: #888888;
+  font-size: 24px;
+}
+
+.side-image {
+  border-radius: 16px;
+  height: 400px;
+}
+
+.container-1 {
+  display: grid;
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  background-color: white;
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  grid-template-areas:
+  "hd hd hd"
+  "br br br"
+  "main main sd";
+  justify-content: center;
+}
+
+#large-left-box {
+  /*background-image: url('sheep.jpg');*/
+  background-size: contain;
+  background-color: none;
+  height: 500px;
+  width: 500px;
+  border:2px solid #C1EC96;
+  color: grey;
+  background-repeat: no-repeat;
+  transition-duration: 0.4s;
+  margin-left: 24px;
+}
+
+#large-right-box {
+  background-image: url('chicken.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+}
+.text-2 {
+  display: flex;
+  align-items: flex-start;
+  grid-area: main;
+  margin-left: 24px;
+}
+
+.reg-box {
+  border-radius: 16px;
+}
+
+#box-a {
+  background-image: url('with-goat.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#box-b {
+  background-image: url('with-cow.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#box-c {
+  background-image: url('baby-w-animals.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#box-d {
+  background-image: url('baby-w-animals.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#box-e {
+  background-image: url('with-elephent.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#box-f {
+  background-image: url('cows.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#round-jenna {
+  background-image: url(jenna.jpg);
+  border-radius: 50%;
+  background-size: contain;
+}
+
+#round-phoenix {
+  background-image: url(phoenix.jpg);
+  border-radius: 50%;
+  background-size: contain;
+}
+#round-olivia {
+  background-image: url(olivia.jpg);
+  border-radius: 50%;
+  background-size: contain;
+}
+
+#quotes {
+ font-weight: bold;
+ font-style: oblique;
+}
+
+.container-recipes {
+  display: grid;
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  background-color: white;
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-columns: 1fr;
+  grid-gap: 8px;
+  grid-template-areas:
+  "hd hd hd"
+  "br br br"
+  "main main sd";
+  justify-content: center;
+}
+
+#box-image {
+  width: 500px;
+  height: 320px;
+  background-image: url(with-cow.jpg);
+}
+.box-recipes {
+line-height: 1.2;
+margin: 24px;
+}
+mark {
+background-color: #C798FF;
+color: white;
+}
+/*  */
