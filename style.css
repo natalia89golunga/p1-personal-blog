@@ -6,15 +6,15 @@ body {
 
 ul.nav {
   color:rebeccapurple;
-  height: 70px;
-  font-size: 26px;
+  height: 72px;
+  font-size: 24px;
   opacity: 0.5;
   padding: 40px;
   list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #E2DBFF;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #C798FF;
 }
 .nav li {
   float: right;
@@ -35,7 +35,6 @@ background-color: #E2DBFF;
 .nav .active {
   background-color: pink;
 }
-
 
 .social {
   position: fixed;
@@ -249,6 +248,7 @@ background-color: #E2DBFF;
 footer {
   /* color: #C798FF; */
   font-size: 24px;
+  color: #C798FF;
 }
 
 /* BLOG PAGE!*/
@@ -359,8 +359,8 @@ body.body-blog {
 }
 
 #quotes {
- font-weight: bold;
- font-style: oblique;
+  font-weight: bold;
+  font-style: oblique;
 }
 
 .container-recipes {
@@ -385,11 +385,11 @@ body.body-blog {
   background-image: url(with-cow.jpg);
 }
 .box-recipes {
-line-height: 1.2;
-margin: 24px;
+  line-height: 1.2;
+  margin: 24px;
 }
 mark {
-background-color: #C798FF;
-color: white;
+  background-color: #C798FF;
+  color: white;
 }
 /*  */
