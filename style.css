@@ -93,6 +93,8 @@ ul.nav {
   justify-content: center;
 }
 .content {
+  display: flex;
+  flex-direction: column;
   grid-area: content;
 }
 
@@ -125,6 +127,12 @@ ul.nav {
   display: flex;
   flex-direction: column;
   width: 66%;
+}
+
+.column-45 {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
 }
 
 .body-blog .header {
@@ -320,12 +328,11 @@ body.body-blog {
   margin-left: 24px;
 }
 
-#large-right-box {
-  background-image: url('chicken.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
+.large-image {
+  object-fit: cover;
   width: 500px;
   height: 500px;
+  border-radius: 16px;
 }
 .text-2 {
   display: flex;
