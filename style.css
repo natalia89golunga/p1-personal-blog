@@ -6,7 +6,7 @@ body {
 
 ul.nav {
   color:rebeccapurple;
-  height: 72px;
+  /*height: 72px;*/
   font-size: 24px;
   opacity: 0.5;
   padding: 40px;
@@ -15,6 +15,7 @@ ul.nav {
   padding: 0;
   overflow: hidden;
   background-color: #C798FF;
+  grid-area: nav;
 }
 .nav li {
   float: right;
@@ -44,6 +45,7 @@ ul.nav {
   width: 120px;
   border-radius: 16px;
   color: #fbf0ff;
+  grid-area: social;
 }
 
 .container {
@@ -68,6 +70,26 @@ ul.nav {
   /*border: 2px solid rebeccapurple;*/
   justify-content: center;
 }
+
+.container-main {
+  display: grid;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  grid-template-rows: 72px auto 72px;
+  grid-template-columns: 45px 1fr 45px;
+  grid-gap: 0px;/* TODO for blog grid-gap: 8px;*/
+  grid-template-areas:
+  "nav nav nav"
+  "social content space"
+  "ft ft ft";
+  /*border: 2px solid rebeccapurple;*/
+  justify-content: center;
+}
+.content {
+  grid-area: content;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -209,7 +231,7 @@ ul.nav {
   font-size: 24px;
 }
 .text-button {
-  background-color: #aa93d6;
+  background-color: pink;
   color: white;
   font-size: 24px;
   padding: 16px;
@@ -218,7 +240,7 @@ ul.nav {
 }
 
 .container:hover .middle {
-  opacity: 0.5;
+  opacity: 0;
 }
 #box-2 {
   background-image: url('salad-tofu.jpg');
@@ -249,6 +271,7 @@ footer {
   /* color: #C798FF; */
   font-size: 24px;
   color: #C798FF;
+  grid-area: ft;
 }
 
 /* BLOG PAGE!*/
