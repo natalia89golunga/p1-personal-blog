@@ -1,7 +1,13 @@
 body {
   background-color: #fbf0ff;
-  color: white;
-  font-size: 40px;
+  color: #C798FF;
+  font-size: 24px;
+  margin: 0px;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 8px;
+  margin-top: 0px;
 }
 
 ul.nav {
@@ -77,7 +83,7 @@ ul.nav {
   height: auto;
   margin: auto;
   grid-template-rows: 72px auto 72px;
-  grid-template-columns: 45px 1fr 45px;
+  grid-template-columns: 128px 1fr 128px;
   grid-gap: 0px;/* TODO for blog grid-gap: 8px;*/
   grid-template-areas:
   "nav nav nav"
@@ -90,19 +96,35 @@ ul.nav {
   grid-area: content;
 }
 
-.header {
+.row-full-width {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  /*border: 2px solid palegreen;*/
-  grid-area: hd;
-  height: 500px;
-  background-image: url('pie.jpg');
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 72px;
-  color: white;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.vertical-padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.horizontal-padding {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.white-background {
+  background-color: white;
+}
+
+.column-66 {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
 }
 
 .body-blog .header {
@@ -123,7 +145,6 @@ ul.nav {
 .form-inline {
   align-items: center;
   justify-content: center;
-  margin-left: 300px;
 }
 .form-control {
   border: 40px;
@@ -172,24 +193,8 @@ ul.nav {
   background-color: #C798FF;
   color: white;
 }
-.about {
-  display: flex;
-  align-items:flex-start;
-  justify-content:left;
-  grid-area: main;
-  color: purple;
-  border: #C798FF;
-  font-size: 24px;
-  margin-bottom: 32px;
-  border-radius: 16px;
-}
-.text {
-  padding: 16px;
-  color:  #C798FF;
-  font-family: "Times New Roman", Times, serif;
-}
 
-.text:hover {
+.text-highlight:hover {
   background-color: #C798FF;
   color: white;
 }
