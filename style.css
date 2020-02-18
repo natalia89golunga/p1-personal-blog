@@ -5,7 +5,7 @@ body {
   margin: 0px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   margin-bottom: 8px;
   margin-top: 0px;
 }
@@ -219,25 +219,28 @@ ul.nav {
   height: 320px;
   border: 1px solid #FFC5D2;
   border-radius: 16px;
+  background-size: contain;
+  border: none;
+  color: white;
+}
+
+.box:hover {
+  /* text-align: center; */
+  background-image: none !important;
+  background-color: #C798FF;
+  color: white;
+  font-size: 24px;
+}
+
+a.box {
+  text-decoration: none;
 }
 
 #box-1 {
   background-image: url('1.jpg');
-  background-size: contain;
-  background-color: pink;
-  border: none;
-  color: white;
-  background-repeat: no-repeat;
-  font-size: 24px;
+
 }
 
-#box-1:hover {
-  opacity: 0.3;
-  text-align: center;
-  background-color: none;
-  color: purple;
-  font-size: 24px;
-}
 .text-button {
   background-color: pink;
   color: white;
@@ -245,6 +248,7 @@ ul.nav {
   padding: 16px;
   border-radius: 16px;
   opacity: 0.9;
+  max-width: 200px;
 }
 
 .container:hover .middle {
