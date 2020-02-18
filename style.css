@@ -206,15 +206,11 @@ ul.nav {
   color: white;
 }
 
-.profile-emily {
+.round-image {
   border-radius: 50%;
+  width: 300px;
 }
 
-#profile-image {
-  align-items: flex-start;
-  grid-area: sd;
-  border: none;
-}
 .box {
   display: flex;
   align-items: center;
@@ -375,6 +371,7 @@ body.body-blog {
   background-repeat: no-repeat;
 }
 
+
 #round-jenna {
   background-image: url(jenna.jpg);
   border-radius: 50%;
@@ -392,7 +389,10 @@ body.body-blog {
   background-size: contain;
 }
 
-#quotes {
+.quotes {
+  display: flex;
+  justify-content: center;
+  width: 320px;
   font-weight: bold;
   font-style: oblique;
 }
@@ -418,10 +418,10 @@ body.body-blog {
   height: 320px;
   background-image: url(with-cow.jpg);
 }
-.box-recipes {
+.text-recipes {
   line-height: 1.2;
-  margin: 24px;
 }
+
 mark {
   background-color: #C798FF;
   color: white;
