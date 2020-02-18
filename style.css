@@ -98,11 +98,10 @@ ul.nav {
   grid-area: content;
 }
 
-.row-full-width {
+.row-main {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  width: 100%;
 }
 
 .width-100 {
