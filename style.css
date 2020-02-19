@@ -69,6 +69,9 @@ ul.nav {
   /*border: 2px solid rebeccapurple;*/
   justify-content: center;
 }
+
+
+
 .content {
   display: flex;
   flex-direction: column;
@@ -99,10 +102,9 @@ ul.nav {
   background-color: white;
 }
 
-.column-66 {
+.column {
   display: flex;
   flex-direction: column;
-  width: 66%;
 }
 
 .form-inline {
@@ -161,6 +163,7 @@ ul.nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* width: 50vw; */
   width: 320px;
   height: 320px;
   border: 1px solid #FFC5D2;
@@ -352,4 +355,66 @@ body.body-blog {
 mark {
   background-color: #C798FF;
   color: white;
+}
+
+/* Mobile Screens */
+@media (max-width: 559px) {
+  .container-main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nav"
+    "content"
+    "ft";
+  }
+  .social {
+    display: none;
+  }
+  .row-main {
+    flex-wrap: wrap;
+  }
+  .box {
+    margin: 10px;
+  }
+  .box>* {
+    margin: 10px;
+  }
+  ul.nav {
+    font-size: 16px;
+  }
+  .large-image {
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width:900px) {
+  .container-main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nav"
+    "content"
+    "ft";
+  }
+  .social {
+    display: none;
+  }
+  .row-main {
+    flex-wrap: wrap;
+  }
+  .box {
+    margin: 10px;
+  }
+  .box>* {
+    margin: 10px;
+  }
+  ul.nav {
+    font-size: 16px;
+  }
+  .large-image {
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+  }
 }
