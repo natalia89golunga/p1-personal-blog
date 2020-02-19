@@ -56,8 +56,10 @@ h1, h2, h3, h4, h5 {
   flex-wrap: wrap;
 }
 
-.width-100 {
+.header-image {
   width: 100%;
+  object-fit: cover;
+  height: 532px;
 }
 
 .vertical-padding {
@@ -183,6 +185,10 @@ mark {
   .social {
     display: none;
   }
+
+.header-image {
+  height: 200px;
+}
 
   .row-main {
     flex-wrap: wrap;
