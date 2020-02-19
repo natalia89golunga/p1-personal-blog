@@ -1,0 +1,29 @@
+body.body-blog {
+  color: #888888;
+  font-size: 24px;
+}
+
+.side-image {
+  border-radius: 16px;
+  height: 400px;
+  width: 300px;
+}
+
+.large-image {
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+  border-radius: 16px;
+}
+
+.quotes {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.text-recipes {
+  line-height: 1.2;
+}

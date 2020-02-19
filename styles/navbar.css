@@ -1,0 +1,32 @@
+
+ul.nav {
+  color:rebeccapurple;
+  font-size: 24px;
+  opacity: 0.5;
+  padding: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #C798FF;
+  grid-area: nav;
+}
+.nav li {
+  float: right;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #C5A0FF;
+}
+
+.nav .active {
+  background-color: pink;
+}

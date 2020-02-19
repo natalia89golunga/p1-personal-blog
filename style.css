@@ -1,4 +1,6 @@
 @import "styles/boxes.css";
+@import "styles/navbar.css";
+@import "styles/blog-page.css";
 
 body {
   background-color: #fbf0ff;
@@ -10,38 +12,6 @@ body {
 h1, h2, h3, h4, h5 {
   margin-bottom: 8px;
   margin-top: 0px;
-}
-
-ul.nav {
-  color:rebeccapurple;
-  font-size: 24px;
-  opacity: 0.5;
-  padding: 40px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #C798FF;
-  grid-area: nav;
-}
-.nav li {
-  float: right;
-}
-
-.nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.nav li a:hover:not(.active) {
-  background-color: #C5A0FF;
-}
-
-.nav .active {
-  background-color: pink;
 }
 
 .social {
@@ -62,16 +32,13 @@ ul.nav {
   margin: auto;
   grid-template-rows: 72px auto 72px;
   grid-template-columns: 128px 1fr 128px;
-  grid-gap: 0px;/* TODO for blog grid-gap: 8px;*/
+  grid-gap: 0px;
   grid-template-areas:
   "nav nav nav"
   "social content space"
   "ft ft ft";
-  /*border: 2px solid rebeccapurple;*/
   justify-content: center;
 }
-
-
 
 .content {
   display: flex;
@@ -116,24 +83,13 @@ ul.nav {
   align-items: center;
   justify-content: center;
 }
+
 .form-control {
   border: 40px;
   padding: 14px;
   border-radius: 16px;
   font-size: 16px;
 }
-
-/* .sub {
-  background-color: darkorchid;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 16px;
-} */
 
 .button {
   background-color: pink;
@@ -209,42 +165,65 @@ footer {
   grid-area: ft;
 }
 
-/* BLOG PAGE!*/
-
-body.body-blog {
-  color: #888888;
-  font-size: 24px;
-}
-
-.side-image {
-  border-radius: 16px;
-  height: 400px;
-  width: 300px;
-}
-
-.large-image {
-  object-fit: cover;
-  width: 500px;
-  height: 500px;
-  border-radius: 16px;
-}
-
-.quotes {
-  display: flex;
-  justify-content: center;
-  width: 320px;
-  font-weight: bold;
-  font-style: oblique;
-}
-
-.text-recipes {
-  line-height: 1.2;
-}
-
 mark {
   background-color: #C798FF;
   color: white;
 }
 
-@import "styles/mobile.css";
-@import "styles/tablet.css";
+/* Mobile Screens */
+@media (max-width: 559px) {
+  .container-main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nav"
+    "content"
+    "ft";
+  }
+
+  .social {
+    display: none;
+  }
+
+  .row-main {
+    flex-wrap: wrap;
+  }
+
+  ul.nav {
+    font-size: 16px;
+  }
+
+  .large-image {
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width:900px) {
+  .container-main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nav"
+    "content"
+    "ft";
+  }
+
+  .social {
+    display: none;
+  }
+
+  .row-main {
+    flex-wrap: wrap;
+  }
+
+  ul.nav {
+    font-size: 16px;
+  }
+
+  .large-image {
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+  }
+}
