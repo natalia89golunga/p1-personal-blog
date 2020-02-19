@@ -84,6 +84,10 @@ ul.nav {
   flex-direction: row;
 }
 
+.image-wrap {
+  flex-wrap: wrap;
+}
+
 .width-100 {
   width: 100%;
 }
@@ -171,6 +175,8 @@ ul.nav {
   background-size: contain;
   border: none;
   color: white;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .box:hover {
@@ -235,35 +241,8 @@ body.body-blog {
 .side-image {
   border-radius: 16px;
   height: 400px;
+  width: 300px;
 }
-
-/* .container-1 {
-  display: grid;
-  width: 80vw;
-  height: auto;
-  margin: auto;
-  background-color: white;
-  grid-auto-rows: minmax(50px, auto);
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-  grid-template-areas:
-  "hd hd hd"
-  "br br br"
-  "main main sd";
-  justify-content: center;
-} */
-
-/* #large-left-box {
-  background-size: contain;
-  background-color: none;
-  height: 500px;
-  width: 500px;
-  border:2px solid #C1EC96;
-  color: grey;
-  background-repeat: no-repeat;
-  transition-duration: 0.4s;
-  margin-left: 24px;
-} */
 
 .large-image {
   object-fit: cover;
@@ -271,16 +250,6 @@ body.body-blog {
   height: 500px;
   border-radius: 16px;
 }
-/* .text-2 {
-  display: flex;
-  align-items: flex-start;
-  grid-area: main;
-  margin-left: 24px;
-}
-
-.reg-box {
-  border-radius: 16px;
-} */
 
 #box-a {
   background-image: url('with-goat.jpg');
@@ -302,23 +271,6 @@ body.body-blog {
 }
 
 
-/* #round-jenna {
-  background-image: url(jenna.jpg);
-  border-radius: 50%;
-  background-size: contain;
-}
-
-#round-phoenix {
-  background-image: url(phoenix.jpg);
-  border-radius: 50%;
-  background-size: contain;
-}
-#round-olivia {
-  background-image: url(olivia.jpg);
-  border-radius: 50%;
-  background-size: contain;
-} */
-
 .quotes {
   display: flex;
   justify-content: center;
@@ -327,27 +279,6 @@ body.body-blog {
   font-style: oblique;
 }
 
-/* .container-recipes {
-  display: grid;
-  width: 80vw;
-  height: auto;
-  margin: auto;
-  background-color: white;
-  grid-auto-rows: minmax(50px, auto);
-  grid-template-columns: 1fr;
-  grid-gap: 8px;
-  grid-template-areas:
-  "hd hd hd"
-  "br br br"
-  "main main sd";
-  justify-content: center;
-} */
-
-/* #box-image {
-  width: 500px;
-  height: 320px;
-  background-image: url(with-cow.jpg);
-} */
 .text-recipes {
   line-height: 1.2;
 }
@@ -372,12 +303,7 @@ mark {
   .row-main {
     flex-wrap: wrap;
   }
-  .box {
-    margin: 10px;
-  }
-  .box>* {
-    margin: 10px;
-  }
+
   ul.nav {
     font-size: 16px;
   }
@@ -403,12 +329,7 @@ mark {
   .row-main {
     flex-wrap: wrap;
   }
-  .box {
-    margin: 10px;
-  }
-  .box>* {
-    margin: 10px;
-  }
+
   ul.nav {
     font-size: 16px;
   }
