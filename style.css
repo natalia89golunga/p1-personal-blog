@@ -1,3 +1,5 @@
+@import "styles/boxes.css";
+
 body {
   background-color: #fbf0ff;
   color: #C798FF;
@@ -12,7 +14,6 @@ h1, h2, h3, h4, h5 {
 
 ul.nav {
   color:rebeccapurple;
-  /*height: 72px;*/
   font-size: 24px;
   opacity: 0.5;
   padding: 40px;
@@ -191,10 +192,6 @@ a.box {
   text-decoration: none;
 }
 
-#box-1 {
-  background-image: url('images/1.jpg');
-}
-
 .text-button {
   background-color: pink;
   color: white;
@@ -203,25 +200,6 @@ a.box {
   border-radius: 16px;
   opacity: 0.9;
   max-width: 200px;
-}
-
-/* .container:hover .middle {
-  opacity: 0;
-} */
-#box-2 {
-  background-image: url('images/salad-tofu.jpg');
-}
-#box-3 {
-  background-image: url('images/soup.jpg');
-}
-#box-4 {
-  background-image: url('images/avocado.jpg');
-}
-#box-5 {
-  background-image: url('images/juices.jpg');
-}
-#box-6 {
-  background-image: url('images/green.jpg');
 }
 
 footer {
@@ -251,26 +229,6 @@ body.body-blog {
   border-radius: 16px;
 }
 
-#box-a {
-  background-image: url('images/with-goat.jpg');
-}
-#box-b {
-  background-image: url('images/with-cow.jpg');
-}
-#box-c {
-  background-image: url('images/baby-w-animals.jpg');
-}
-#box-d {
-  background-image: url('images/baby-w-animals.jpg');
-}
-#box-e {
-  background-image: url('images/with-elephent.jpg');
-}
-#box-f {
-  background-image: url('images/cows.jpg');
-}
-
-
 .quotes {
   display: flex;
   justify-content: center;
@@ -288,54 +246,5 @@ mark {
   color: white;
 }
 
-/* Mobile Screens */
-@media (max-width: 559px) {
-  .container-main {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "nav"
-    "content"
-    "ft";
-  }
-  .social {
-    display: none;
-  }
-  .row-main {
-    flex-wrap: wrap;
-  }
-
-  ul.nav {
-    font-size: 16px;
-  }
-  .large-image {
-    width: 300px;
-    height: 300px;
-    margin-top: 10px;
-  }
-}
-
-/* Medium Screens */
-@media (min-width: 600px) and (max-width:900px) {
-  .container-main {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "nav"
-    "content"
-    "ft";
-  }
-  .social {
-    display: none;
-  }
-  .row-main {
-    flex-wrap: wrap;
-  }
-
-  ul.nav {
-    font-size: 16px;
-  }
-  .large-image {
-    width: 300px;
-    height: 300px;
-    margin-top: 10px;
-  }
-}
+@import "styles/mobile.css";
+@import "styles/tablet.css";
