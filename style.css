@@ -192,7 +192,7 @@ a.box {
 }
 
 #box-1 {
-  background-image: url('1.jpg');
+  background-image: url('images/1.jpg');
 }
 
 .text-button {
@@ -209,19 +209,19 @@ a.box {
   opacity: 0;
 } */
 #box-2 {
-  background-image: url('salad-tofu.jpg');
+  background-image: url('images/salad-tofu.jpg');
 }
 #box-3 {
-  background-image: url('soup.jpg');
+  background-image: url('images/soup.jpg');
 }
 #box-4 {
-  background-image: url('avocado.jpg');
+  background-image: url('images/avocado.jpg');
 }
 #box-5 {
-  background-image: url('juices.jpg');
+  background-image: url('images/juices.jpg');
 }
 #box-6 {
-  background-image: url('green.jpg');
+  background-image: url('images/green.jpg');
 }
 
 footer {
@@ -252,22 +252,22 @@ body.body-blog {
 }
 
 #box-a {
-  background-image: url('with-goat.jpg');
+  background-image: url('images/with-goat.jpg');
 }
 #box-b {
-  background-image: url('with-cow.jpg');
+  background-image: url('images/with-cow.jpg');
 }
 #box-c {
-  background-image: url('baby-w-animals.jpg');
+  background-image: url('images/baby-w-animals.jpg');
 }
 #box-d {
-  background-image: url('baby-w-animals.jpg');
+  background-image: url('images/baby-w-animals.jpg');
 }
 #box-e {
-  background-image: url('with-elephent.jpg');
+  background-image: url('images/with-elephent.jpg');
 }
 #box-f {
-  background-image: url('cows.jpg');
+  background-image: url('images/cows.jpg');
 }
 
 
